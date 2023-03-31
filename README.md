@@ -1,4 +1,5 @@
 # Forgelin
+[![](https://jitpack.io/v/breather655/Forgelin.svg)](https://jitpack.io/#breather655/Forgelin)
 
 Fork of [Shadowfacts Forgelin (by. Licious17)](https://github.com/Licious17/Forgelin).
 
