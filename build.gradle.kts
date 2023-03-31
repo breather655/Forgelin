@@ -11,6 +11,7 @@ val repositoryLink: String by ext.properties
 val kotlinVersion: String by ext.properties
 val annotationsVersion: String by ext.properties
 val coroutinesVersion: String by ext.properties
+val serializationVersion: String by ext.properties
 val modDescription: String = "Kotlin helper library for Minecraft Forge."
 
 buildscript {
@@ -29,6 +30,7 @@ buildscript {
 plugins {
     java
     kotlin("jvm") version "1.5.30"
+    kotlin("plugin.serialization") version "1.5.30"
     id("net.kyori.blossom") version "1.3.0"
     id("com.github.johnrengelman.shadow") version "7.0.0"
 }
@@ -62,6 +64,8 @@ dependencies {
     shadow("org.jetbrains:annotations:$annotationsVersion")
     shadow("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
     shadow("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:$coroutinesVersion")
+    shadow("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:$serializationVersion")
+    shadow("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:$serializationVersion")
 }
 
 blossom {
