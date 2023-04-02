@@ -33,6 +33,7 @@ plugins {
     kotlin("plugin.serialization") version "1.5.30"
     id("net.kyori.blossom") version "1.3.0"
     id("com.github.johnrengelman.shadow") version "7.0.0"
+    id("eclipse")
     id("maven-publish")
 }
 
